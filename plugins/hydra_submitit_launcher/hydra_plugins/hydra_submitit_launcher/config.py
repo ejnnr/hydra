@@ -27,6 +27,8 @@ class BaseQueueConf:
     name: str = "${hydra.job.name}"
     # redirect stderr to stdout
     stderr_to_stdout: bool = False
+    # wait until jobs finish before exiting and return results
+    wait_until_finished: bool = True
 
 
 @dataclass
